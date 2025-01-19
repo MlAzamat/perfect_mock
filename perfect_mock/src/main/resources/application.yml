@@ -1,0 +1,34 @@
+management:
+  endpoints:
+    web.exposure:
+      include: health,info,env,mappings,metrics,beans,prometheus
+  #chto pokazivat
+  endpoint:
+    health:
+      show-details=always
+  #health pokazivat v detalyah
+
+
+  server:
+    port: 8999
+#port dlya actuator
+server:
+  port: 8999
+#port dlya servisa
+timerUser:
+  min: 50
+  max: 100
+timerGreeting:
+  min: 100
+  max: 200
+timerKafka:
+  min: 200
+  max: 300
+timerBankCard:
+  min: 300
+  max: 400
+#vremya zaderzhki
+logging:
+  level:
+    root: warn
+    com.springexamples: DEBUG
